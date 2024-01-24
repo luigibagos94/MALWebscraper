@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 import ast
 
-df = pd.read_csv('/Users/luigibagos/Desktop/MALWebscraper/MAL_DF.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/luigibagos94/MALWebscraper/main/MAL_DF.csv')
 
 #Clean the DataFrame upon loading
 df = df.dropna(subset=['Score', 'Members'])
@@ -20,7 +20,7 @@ st.set_page_config(page_title="MAL Dashboard",
 
 #SIDEBAR SECTION
 
-st.sidebar.image('/Users/luigibagos/Desktop/MAL_Extract/MAL_Long_Logo.jpg', use_column_width=True)
+st.sidebar.image('https://raw.githubusercontent.com/luigibagos94/MALWebscraper/main/MAL_Long_Logo.jpg', use_column_width=True)
 st.sidebar.header("Use the filters below to explore Top Anime:")
 
 year = st.sidebar.slider(
