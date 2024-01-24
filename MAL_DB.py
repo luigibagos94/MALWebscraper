@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 import ast
 
-df = pd.read_csv('/Users/luigibagos/Desktop/MAL_Extract/MAL_DF.csv')
+df = pd.read_csv('/Users/luigibagos/Desktop/MALWebscraper/MAL_DF.csv')
 
 #Clean the DataFrame upon loading
 df = df.dropna(subset=['Score', 'Members'])
