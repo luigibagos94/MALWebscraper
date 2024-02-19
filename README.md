@@ -1,7 +1,23 @@
-[README UNDER CONSTRUCTION]
+This project was created out of a desire to demonstrate the variety of different skills I have picked up when learning Python. A common recommendation has always been to create a project about a topic you are interested in, so I opted to create one about anime! Since MyAnimeList was such a well known database for anime content, I thought it would be cool to explore how I can webscrape all anime info from this website and convert it into a usable dashboard. 
 
-The objective of this project is to do an analysis of MyAnimeList Website Data. It is comprised of two parts:
-1. Create a Webscraper to obtain anime data.
-2. Visualize the extracted data using Streamlit. 
+![Screen Shot 2024-02-03 at 8 54 28 AM](https://github.com/luigibagos94/MALWebscraper/assets/133476028/c38a6301-0aa5-4817-9280-c8148081fff8)
 
-https://myanimelistdashboard.streamlit.app/
+To learn more about what led to this project, my general workflow and findings,  you can check my portoflio website: https://www.luigibagos.com/malwebscraper
+
+In summary, the objective of this project is to do an analysis of MyAnimeList Website Data. It is comprised of two parts:
+1. **Create a Webscraper to obtain anime data.** I would focus on Anime TV shows across Winter, Spring, Summer and Fall Seasons from 2014 - 2023. 
+2. **Visualize the extracted data using Streamlit.** This dashboard makes use of packages like streamlit, pandas, to visualize anime data. I wanted this to be a simple dashboard, but I wanted to ensure python was the main language I used. 
+
+To set up this project, I used the following files: 
+
+**MAL_Webscraper.ipynb** - This is the Jupyter Notebook file used to run the webscraper from which I was able to extract 10 years worth of MAL website data. It is comprised of different functions that are described in further detail in the actual notebook. The main output of this file is a CSV extract with organized data that was fed into a Streamlit dashboard
+
+**MAL_DB.py** - This is the main python file used to generate the Streamlit dashboard. It takes the output of the previous file and uses it as an input for dashboard's visualizations. 
+
+**MAL_DF.csv** - This is the dataframe that was generated from the webscraper and fed into the dashboard. 
+
+**MAL_Long_Logo.jpg** - This is just the file I used for the logo in the dashboard. 
+
+**requirements.txt** - This files contains the specific requirements needed to replicate this program. 
+
+To see the final output, check the link: https://myanimelistdashboard.streamlit.app/
